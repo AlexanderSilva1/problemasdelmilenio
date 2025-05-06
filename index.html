@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Los 7 Problemas del Milenio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Logo" style="width:50px;" class="me-2">
+                Problemas del Milenio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#problemas">Problemas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#premio">Premio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soluciones">Soluciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center" id="inicio">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-3 fw-bold mb-4">Los Siete Problemas del Milenio</h1>
+                    <p class="lead mb-4">Los problemas matemáticos más desafiantes de nuestro tiempo, cada uno con una recompensa de $1 millón de dólares</p>
+                    <a href="#problemas" class="btn btn-primary btn-lg px-4 me-2">Explorar Problemas</a>
+                    <a href="#premio" class="btn btn-outline-light btn-lg px-4">Sobre el Premio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problemas del Milenio -->
+    <section class="py-5 bg-light" id="problemas">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-title">Los 7 Problemas del Premio del Milenio</h2>
+                <p class="lead text-muted">Seleccionados por el Instituto Clay de Matemáticas en el año 2000</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Problema 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">P vs NP</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">¿Es toda solución verificable en tiempo polinómico también resoluble en tiempo polinómico?</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Teoría de la Computación</span>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pvsnpModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">La Conjetura de Hodge</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Sobre la relación entre la topología algebraica y la geometría algebraica de variedades proyectivas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Geometría Algebraica</span>
+                                <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#hodgeModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="card-title mb-0">La Conjetura de Poincaré</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Resuelta por Grigori Perelman en 2003. ¿Es la esfera tridimensional la única variedad compacta simplemente conexa?</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning text-dark">Resuelto</span>
+                                <span class="badge bg-info text-dark">Topología</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">La Hipótesis de Riemann</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Sobre la distribución de los ceros no triviales de la función zeta de Riemann.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Teoría de Números</span>
+                                <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#riemannModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title mb-0">Yang-Mills y el salto de masa</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Probar que las ecuaciones de Yang-Mills en el espacio-tiempo de Minkowski tienen un salto de masa.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Física Matemática</span>
+                                <button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#yangmillsModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="card-title mb-0">Las ecuaciones de Navier-Stokes</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Probar la existencia y suavidad de soluciones para las ecuaciones que describen el movimiento de fluidos.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Ecuaciones Diferenciales</span>
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#navierstokesModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 7 -->
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="card h-100 problem-card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="card-title mb-0">La Conjetura de Birch y Swinnerton-Dyer</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Relaciona el rango del grupo abeliano de puntos racionales de una curva elíptica con el orden de anulación de su función L.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Teoría de Números</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#birchModal">
+                                    Más info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre el Premio -->
+    <section class="py-5 bg-white" id="premio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Clay_Mathematics_Institute_logo.png/1200px-Clay_Mathematics_Institute_logo.png" alt="Instituto Clay" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">El Premio del Milenio</h2>
+                    <p class="lead">El Instituto Clay de Matemáticas seleccionó siete problemas matemáticos fundamentales sin resolver y ofreció un premio de <strong>$1,000,000 USD</strong> por cada solución.</p>
+                    <p>Los problemas fueron anunciados en el año 2000 en el Colegio de Francia en París, conmemorando los famosos 23 problemas de Hilbert presentados en 1900.</p>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="me-3">
+                            <i class="bi bi-award-fill text-warning" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Único problema resuelto</h5>
+                            <p class="mb-0">La Conjetura de Poincaré fue resuelta por Grigori Perelman, quien rechazó el premio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones -->
+    <section class="py-5 bg-dark text-white" id="soluciones">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Estado de las Soluciones</h2>
+                <p class="lead">Progreso en la resolución de estos problemas</p>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Problema</th>
+                            <th>Estado</th>
+                            <th>Avances significativos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P vs NP</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Muchos problemas importantes en NP se han demostrado NP-completos</td>
+                        </tr>
+                        <tr>
+                            <td>Conjetura de Hodge</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Se ha demostrado para variedades de dimensión baja</td>
+                        </tr>
+                        <tr>
+                            <td>Conjetura de Poincaré</td>
+                            <td><span class="badge bg-success">Resuelto</span></td>
+                            <td>Resuelto por Grigori Perelman en 2003 usando flujo de Ricci</td>
+                        </tr>
+                        <tr>
+                            <td>Hipótesis de Riemann</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Se ha verificado para billones de ceros no triviales</td>
+                        </tr>
+                        <tr>
+                            <td>Yang-Mills y salto de masa</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Se ha demostrado en casos especiales</td>
+                        </tr>
+                        <tr>
+                            <td>Ecuaciones de Navier-Stokes</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Existen soluciones para casos particulares</td>
+                        </tr>
+                        <tr>
+                            <td>Conjetura de Birch y Swinnerton-Dyer</td>
+                            <td><span class="badge bg-warning">Sin resolver</span></td>
+                            <td>Se ha demostrado en casos especiales</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="py-5 bg-light" id="contacto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Contáctanos</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="interes" class="form-label">Problema de interés</label>
+                                    <select class="form-select" id="interes">
+                                        <option selected>Seleccione un problema</option>
+                                        <option>P vs NP</option>
+                                        <option>Conjetura de Hodge</option>
+                                        <option>Hipótesis de Riemann</option>
+                                        <option>Yang-Mills</option>
+                                        <option>Navier-Stokes</option>
+                                        <option>Birch y Swinnerton-Dyer</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Los 7 Problemas del Milenio</h5>
+                    <p>Página educativa sobre los problemas matemáticos más importantes del siglo XXI.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Inicio</a></li>
+                        <li><a href="#problemas" class="text-white">Problemas</a></li>
+                        <li><a href="#premio" class="text-white">Premio</a></li>
+                        <li><a href="#soluciones" class="text-white">Soluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Problemas del Milenio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales para cada problema -->
+    <!-- Modal P vs NP -->
+    <div class="modal fade" id="pvsnpModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">P vs NP</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El problema P versus NP es una de las cuestiones más importantes en las ciencias de la computación teórica y las matemáticas. En términos simples, pregunta:</p>
+                    <p class="fw-bold">"¿Es todo problema cuya solución puede ser verificada rápidamente por una computadora también resoluble rápidamente por una computadora?"</p>
+                    <p>Si P = NP, muchos problemas importantes podrían resolverse de manera eficiente, lo que tendría profundas implicaciones en campos como la criptografía, la optimización y la inteligencia artificial.</p>
+                    <p>La mayoría de los expertos creen que P ≠ NP, pero aún no se ha encontrado una prueba.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
